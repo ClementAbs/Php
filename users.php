@@ -1,5 +1,5 @@
 <?php
-  $my_users = array(
+  $users = array(
     0 => array(
       'id' => '1',
       'name' => 'JP',
@@ -28,8 +28,19 @@
   // print '<pre>';
   // print_r($my_users);
   // print '</pre>';
-  foreach($my_users as $user) {
+
+foreach($users as $user){
+
+  generate_user_row($user);
+
+}
+
+
+function generate_user_row($user){
+
     print 'Nom: ' . $user['name'] . '<br/>';
     print 'Email:' . $user['mail'] . '<br/>';
-  }
+
+}
+
 ?>
